@@ -1,0 +1,43 @@
+:root {
+    --branco: #fff;
+    --cor1-fontes: #1e7c7c;
+    --cor2-fontes: #467b94;
+    --cor-back: #a0b8be;
+    --cor-abas: rgb(45, 64, 88);
+    --fonte1: "Lily Script One", system-ui;
+    --fonte2: "Lexend", sans-serif;
+}
+
+header {
+    padding: .75rem 0;
+    background-color: var(--cor-abas);
+    color: var(--branco);
+}
+
+.cabecalho {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cabecalho h1 {
+    font-family: var(--fonte1);
+    font-size: 36px;
+}
+
+.cabecalho ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecalho a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor-back);
+    font-family: var(--fonte2);
+}
