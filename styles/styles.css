@@ -13,7 +13,7 @@ h1,h2,h3 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2.5rem;
     color: var(--cor1-fontes);
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 .cabecalho h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .cabecalho ul {
@@ -43,7 +43,7 @@ header {
 .cabecalho a {
     color: var(--branco);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 body {
@@ -51,23 +51,32 @@ body {
     font-family: var(--fonte2);
 }
 
-.sobre {
-    max-width: 1440px;
+#sobre {
+    max-width: 85vw;
     display: flex;
     justify-content: space-around;
-    margin: auto;
-    padding: 2rem;
+    margin: 2rem auto;
 }
 
-.sobre div {
-    max-width: 720px;
+#sobre div {
+    max-width: 50%;
 }
 
-.sobre div p {
+#sobre div h2 {
+    margin-bottom: .75rem;
+}
+
+#sobre div p {
     text-align: justify;
+    font-size: 1.25rem;
 }
 
-.sobre img {
-    width: 350px;
+#sobre div p strong {
+    font-weight: bold;
+}
+
+#sobre img {
+    max-width: 25vw;
+    max-height: 25vw;
     border-radius: 5%;
 }
