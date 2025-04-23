@@ -1,15 +1,20 @@
 :root {
     --branco: #fff;
-    --cor1-fontes: #1e7c7c;
+    --cor1-fontes: #2d4058;
     --cor2-fontes: #467b94;
     --cor-back: #a0b8be;
-    --cor-abas: rgb(45, 64, 88);
+    --cor-abas: #2d4058;
     --fonte1: "Lily Script One", system-ui;
     --fonte2: "Lexend", sans-serif;
 }
 
 h1,h2,h3 {
     font-family: var(--fonte1);
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--cor1-fontes);
 }
 
 header {
@@ -44,4 +49,25 @@ header {
 body {
     background-color: var(--cor-back);
     font-family: var(--fonte2);
+}
+
+.sobre {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 2rem;
+}
+
+.sobre div {
+    max-width: 720px;
+}
+
+.sobre div p {
+    text-align: justify;
+}
+
+.sobre img {
+    width: 350px;
+    border-radius: 5%;
 }
