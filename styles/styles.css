@@ -8,6 +8,10 @@
     --fonte2: "Lexend", sans-serif;
 }
 
+h1,h2,h3 {
+    font-family: var(--fonte1);
+}
+
 header {
     padding: .75rem 0;
     background-color: var(--cor-abas);
@@ -23,7 +27,6 @@ header {
 }
 
 .cabecalho h1 {
-    font-family: var(--fonte1);
     font-size: 36px;
 }
 
@@ -35,6 +38,7 @@ header {
 .cabecalho a {
     color: var(--branco);
     text-decoration: none;
+    font-size: 20px;
 }
 
 body {
