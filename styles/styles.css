@@ -16,6 +16,7 @@ h1,h2,h3 {
 h2 {
     font-size: 2.5rem;
     color: var(--cor1-fontes);
+    margin-bottom: .75rem;
 }
 
 header {
@@ -68,11 +69,7 @@ body {
     max-width: 50%;
 }
 
-#sobre div h2 {
-    margin-bottom: .75rem;
-}
-
-#sobre div p {
+div > p {
     text-align: justify;
     font-size: 1.25rem;
 }
@@ -85,4 +82,26 @@ body {
     max-width: 20vw;
     max-height: 20vw;
     border-radius: 5%;
+}
+
+#trajetoria {
+    display: flex;
+    flex-direction: column;
+    max-width: 75vw;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+#trajetoria div {
+    justify-items: center;
+}
+
+#trajetoria div p {
+    margin-bottom: .75rem;
+}
+
+#trajetoria img {
+    max-width: 35vw;
+    margin: 0 0 1rem;
 }
