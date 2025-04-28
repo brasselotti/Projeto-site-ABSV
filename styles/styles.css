@@ -19,6 +19,10 @@ h2 {
     margin-bottom: .75rem;
 }
 
+section {
+    margin: 2rem auto;
+}
+
 header {
     padding: .75rem 0;
     background-color: var(--cor-abas);
@@ -62,7 +66,6 @@ body {
     max-width: 85vw;
     display: flex;
     justify-content: space-around;
-    margin: 2rem auto;
 }
 
 #sobre div {
@@ -88,9 +91,7 @@ div > p {
     display: flex;
     flex-direction: column;
     max-width: 75vw;
-    margin: 0 auto;
     align-items: center;
-
 }
 
 #trajetoria div {
@@ -101,7 +102,16 @@ div > p {
     margin-bottom: .75rem;
 }
 
+#veja {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
 #trajetoria img {
     max-width: 35vw;
-    margin: 0 0 1rem;
+}
+
+.servicos-agenda {
+    display: flex;
+    justify-content: space-around;
 }
