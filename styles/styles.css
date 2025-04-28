@@ -2,6 +2,7 @@
     --branco: #fff;
     --cor1-fontes: #2d4058;
     --cor2-fontes: #467b94;
+    --cor3-fontes: #9EC42E;
     --cor-back: #a0b8be;
     --cor-abas: #2d4058;
     --fonte1: "Lily Script One", system-ui;
@@ -45,6 +46,11 @@ header {
     text-decoration: none;
     font-size: 1.25rem;
 }
+
+.cabecalho a:hover {
+    color: var(--cor3-fontes);
+}
+
 
 body {
     background-color: var(--cor-back);
