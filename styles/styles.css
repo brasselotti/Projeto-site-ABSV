@@ -1,12 +1,15 @@
 :root {
     --branco: #fff;
-    --cor1-fontes: #2d4058;
-    --cor2-fontes: #467b94;
-    --cor3-fontes: #9EC42E;
+    --fontes-cor1: #2d4058;
+    --fontes-cor2: #467b94;
+    --fontes-cor3: #9EC42E;
     --cor-back: #a0b8be;
     --cor-abas: #2d4058;
     --fonte1: "Lily Script One", system-ui;
     --fonte2: "Lexend", sans-serif;
+    --table-cor1: #2d4058;
+    --table-cor2: #467b94;
+    --table-cor3: #9EC42E;
 }
 
 h1,h2,h3 {
@@ -15,7 +18,7 @@ h1,h2,h3 {
 
 h2 {
     font-size: 2.5rem;
-    color: var(--cor1-fontes);
+    color: var(--fontes-cor1);
     margin-bottom: .75rem;
 }
 
@@ -53,13 +56,15 @@ header {
 }
 
 .cabecalho a:hover {
-    color: var(--cor3-fontes);
+    color: var(--fontes-cor3);
 }
 
 
 body {
     background-color: var(--cor-back);
     font-family: var(--fonte2);
+    font-size: 1.25rem;
+    text-align: justify;
 }
 
 #sobre {
@@ -72,10 +77,9 @@ body {
     max-width: 50%;
 }
 
-div > p {
+/* div > p {
     text-align: justify;
-    font-size: 1.25rem;
-}
+} */
 
 #sobre div p strong {
     font-weight: bold;
@@ -109,9 +113,74 @@ div > p {
 
 #trajetoria img {
     max-width: 35vw;
+    border-radius: 20px;
 }
 
 .servicos-agenda {
     display: flex;
     justify-content: space-around;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos h2 {
+    align-self: center;
+}
+
+.servicos ul {
+    min-width: 500px;
+    font-size: 1.75rem;
+    list-style: inside;
+}
+
+.servicos ul li::marker {
+    color: var(--fontes-cor1);
+}
+
+#agenda {
+    display: flex;
+    flex-direction: column;
+}
+
+#agenda h2 {
+    align-self: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: var(--branco);
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--fontes-cor2);
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid var(--branco);
+    padding: 8px 12px;
+}
+
+td {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+thead, tfoot {
+    background-color: var(--table-cor3);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--table-cor2);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-cor1);
 }
