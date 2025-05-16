@@ -3,6 +3,7 @@
     --fontes-cor1: #2d4058;
     --fontes-cor2: #467b94;
     --fontes-cor3: #9EC42E;
+    --fontes-cor4: #588a24;
     --cor-back: #a0b8be;
     --cor-abas: #2d4058;
     --fonte1: "Lily Script One", system-ui;
@@ -18,7 +19,7 @@ h1,h2,h3 {
 
 h2 {
     font-size: 2.5rem;
-    color: var(--fontes-cor1);
+    color: var(--fontes-cor4);
     margin-bottom: .75rem;
 }
 
@@ -183,4 +184,89 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
     background-color: var(--table-cor1);
+}
+
+#info {
+    display: flex;
+    justify-content: space-around;
+}
+
+#info h2 {
+    justify-self: center;
+}
+
+form, form>fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 2px solid var(--fontes-cor1);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+fieldset legend {
+    color: var(--branco);
+    background-color: var(--fontes-cor2);
+    border: 3px solid var(--fontes-cor1);
+    border-radius: 5px;
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+form label {
+    font-family: var(--fonte1);
+    font-weight: 500;
+    color: var(--fontes-cor1);
+
+}
+
+form input {
+    margin-bottom: .5rem;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+    margin-bottom: .5rem;
+}
+
+form input:focus, form textarea:focus {
+    outline-color: var(--fontes-cor4);
+}
+
+button {
+    border: 1px solid var(--fontes-cor4);
+    border-radius: 5px;
+    width: 5rem;
+    padding: .35rem;
+    margin: .25rem  auto;
+    align-self: center;
+    font-family: var(--fonte2);
+    background-color: var(--fontes-cor2);
+    color: var(--branco);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--fontes-cor1);
+    scale: 1.1;
+}
+
+::placeholder {
+    font-family: var(--fonte2);
+    font-weight: 200;
+}
+
+.rodape {
+    background-color: var(--cor-abas);
+    color: var(--branco);
+    padding: 16px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
 }
